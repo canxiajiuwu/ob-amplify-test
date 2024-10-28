@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+    <script>
+      /**
+       * Created by tom on 2017/7/20.
+       */
+      ;(function (win, lib) {
+        const doc = win.document
+        const docEl = doc.documentElement
+        let metaEl = doc.querySelector('meta[name="viewport"]')
+        const flexibleEl = doc.querySelector('meta[name="flexible"]')
+        let dpr = 0
+        let scale = 0
+        let tid
+        const flexible = lib.flexible || (lib.flexible = {})
+        win.refreshRemTimes = 0
+        if (metaEl) {
+          const match = metaEl
+            .getAttribute('content')
+            .match(/initial\-scale=([\d\.]+)/)
+          if (match) {
+            scale = parseFloat(match[1])
+            dpr = parseInt(1 / scale)
+          }
+        } else if (flexibleEl) {
+          const content = flexibleEl.getAttribute('content')
+          if (content) {
+            const initialDpr = content.match(/initial\-dpr=([\d\.]+)/)
+            const maximumDpr = content.match(/maximum\-dpr=([\d\.]+)/)
+            if (initialDpr) {
+              dpr = parseFloat(initialDpr[1])
+              scale = parseFloat((1 / dpr).toFixed(2))
+            }
+            if (maximumDpr) {
+              dpr = parseFloat(maximumDpr[1])
+              scale = parseFloat((1 / dpr).toFixed(2))
+            }
+          }
+        }
+        if (!dpr && !scale) {
+          const isIPhone = win.navigator.appVersion.match(/iphone/gi)
+          const devicePixelRatio = win.devicePixelRatio
+          if (isIPhone) {
+            // In iOS, for 2 and 3 screens, use 2 times the solution, and for the rest, use 1 times the solution
+            if (devicePixelRatio >= 3 && (!dpr || dpr >= 3)) {
+              dpr = 3
+            } else if (devicePixelRatio >= 2 && (!dpr || dpr >= 2)) {
+              dpr = 2
+            } else {
+              dpr = 1
+            }
+          } else {
+            // Other equipment, still use 1 - fold solution
+            dpr = 1
+          }
+          scale = 1 / dpr
+        }
+        // Add the data-dpr attribute for the HTML tag
+        docEl.setAttribute('data-dpr', dpr)
+        if (!metaEl) {
+          metaEl = doc.createElement('meta')
+          metaEl.setAttribute('name', 'viewport')
+          // Dynamically setting meta
+          metaEl.setAttribute(
+            'content',
+            'initial-scale=' +
+              scale +
+              ', maximum-scale=' +
+              scale +
+              ', minimum-scale=' +
+              scale +
+              ', user-scalable=no'
+          )
+          if (docEl.firstElementChild) {
+            docEl.firstElementChild.appendChild(metaEl)
+          } else {
+            const wrap = doc.createElement('div')
+            wrap.appendChild(metaEl)
+            doc.write(wrap.innerHTML)
+          }
+        }
+        function ispc() {
+          const userAgentInfo = navigator.userAgent
+          const Agents = [
+            'Android',
+            'iPhone',
+            'SymbianOS',
+            'Windows Phone',
+            'iPad',
+            'iPod'
+          ]
+          let flag = true
+          for (let v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+              flag = false
+              break
+            }
+          }
+          return flag
+        }
+        // Rem is set based on DPR and physical pixels
+        function refreshRem() {
+          win.refreshRemTimes++
+          // GetBoundingClientRect ().width equals physical pixels
+          let width = docEl.getBoundingClientRect().width
+          // Width/DPR > 540 is equal to independent pixels
+          if (ispc()) {
+            const v = docEl.clientHeight
+            width = parseInt(v * 0.5625)
+          }
+          // else {
+          //   if (width / dpr > 640) {
+          //     width = 640 * dpr;
+          //   }
+          // }
+
+          const rem = width / 10 // Divide the screen width into 10 parts, and 1 part is 1rem.rem transform px calculation formula =d*(width/10)
+          docEl.style.fontSize = rem + 'px'
+          flexible.rem = win.rem = rem
+        }
+        // Listen for window changes and resize
+        win.addEventListener(
+          'resize',
+          function () {
+            clearTimeout(tid)
+            tid = setTimeout(refreshRem, 300)
+          },
+          false
+        )
+        // When the page is reloaded, determine if it is a cache, and if so, execute refreshRem()
+        win.addEventListener(
+          'pageshow',
+          function (e) {
+            if (e.persisted) {
+              clearTimeout(tid)
+              tid = setTimeout(refreshRem, 300)
+            }
+          },
+          false
+        )
+        if (doc.readyState === 'complete') {
+          doc.body.style.fontSize = 12 * dpr + 'px'
+        } else {
+          doc.addEventListener(
+            'DOMContentLoaded',
+            function (e) {
+              doc.body.style.fontSize = 12 * dpr + 'px'
+            },
+            false
+          )
+        }
+        refreshRem()
+        flexible.dpr = win.dpr = dpr
+        flexible.refreshRem = refreshRem
+        flexible.rem2px = function (d) {
+          let val = parseFloat(d) * this.rem
+          if (typeof d === 'string' && d.match(/rem$/)) {
+            val += 'px'
+          }
+          return val
+        }
+        flexible.px2rem = function (d) {
+          let val = parseFloat(d) / this.rem
+          if (typeof d === 'string' && d.match(/px$/)) {
+            val += 'rem'
+          }
+          return val
+        }
+      })(window, window.lib || (window.lib = {}))
+    </script>
+    <script>
+      ;(function (doc) {
+        // Add webps class name to html root node
+        function addRootTag() {
+          doc.documentElement.className += ' no-webps'
+        }
+        // Determine whether there is a cookie of webps=A
+        if (!/(^|;\s?)webps=A/.test(document.cookie)) {
+          var image = new Image()
+          // What to do when the image is loaded
+          image.onload = function () {
+            // If the image is loaded successfully and the width is 1, it means that it supports webp, because this base64 image is in webp format.
+            // If not supported, the image.error method will be triggered
+            if (image.width == 1) {
+              // Add class to html root node and embed cookie
+              // addRootTag()
+              document.cookie = 'webps=A; max-age=31536000;'
+            } else {
+              addRootTag()
+            }
+          }
+          image.onerror = addRootTag
+          // A webp image with alpha transparency, encoded with base64
+          image.src =
+            'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=='
+        }
+      })(document)
+    </script>
+  </head>
+  <body {{ BODY_ATTRS }}>
+    {{ APP }}
+  </body>
+</html>

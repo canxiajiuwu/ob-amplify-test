@@ -1,0 +1,87 @@
+// 全局变量 注: 以下变量样式均为默认,实际中有部分样式为被覆盖,无法在此修改
+// 修改完此文件变量,记得修改js同名文件中同名变量
+// 主题
+@mainThemeColor: #5a40ff; // 主题色
+@mainBrandColor: #4c50fa; // 品牌色
+@mainButtonHeight: 26rem/36; // 主要按钮高度,列如:登录注册
+@mainButtonWidth: 56rem/36; // 主要按钮宽度
+@mainButtonRadius: 6rem/36; // 主要按钮圆角
+@mainButtonFz: 10rem/36; // 主要按钮字体大小
+@mainButtonComparedColor: #fff; // 主要按钮与主题色的对比色
+@headBackBgColor: #fff; // 顶部返回投默认背景颜色
+
+// 业务
+@oddsButtonWidth: 60rem/36; // 业务按钮宽度
+@oddsButtonHeight: 33rem/36; // 业务按钮高度
+@oddsButtonRadius: 17rem/36; // 业务按钮圆角
+@oddsButtonFz: 13rem/36; // 业务按钮字体大小
+@oddsButtonColor: #000; // 业务按钮字体颜色
+@noOddsColor: #f3f3fa; // 业务按钮没被选中时的背景色
+@oddsColor: #fcdb06; // 业务按钮被选中时的背景色
+@liveOddsButtonColor: #fff; // live模式业务按钮字体颜色
+@liveNoOddsColor: #32303e; // live模式业务按钮没被选中时的背景色
+@liveOddsColor: #fcdb06; // live模式业务按钮被选中时的背景色
+@addsLockBgColor: #c9c9c9; // 业务按钮静止选中时背景色
+@selectAddsColor: #fd4f30; // 调整倍率字体颜色
+@selectActiveColor: #393c45; // tabs栏选中点击时的颜色
+@liveNameColor: #a2a2a7; // live页面描述文案颜色
+@liveUpcomingDateColor: #7dda1a; // live upcoming的比赛时间颜色
+
+// 非业务样式(列如筛选按钮)
+@noChooseButton: #f8f8f9; // 未选中背景色
+@chooseButton: #fcdb06; // 选中时背景色
+@noChooseColor: #333; // 未选中字体颜色
+@chooseColor: #333; // 选中时字体颜色
+@tabNoColor: #b2abe0; // tab栏未选中颜色
+@tabColor: @mainThemeColor; // tab栏选中颜色
+@tabLiveColor: @selectAddsColor; // live页面tab栏选择颜色
+@tabLiveNoColor: @mainButtonComparedColor; // live页面tab栏未选择颜色
+@foryouBgColor: #f2f2f4; // foryou页面背景色
+
+// 页脚tab栏颜色
+@footDefaultColor: #bebbce; // 未选中颜色
+@footLiveDefaultColor: #6e6986; // live未选中颜色
+@footChooseColor: @mainThemeColor; // 选中颜色
+@footLiveBgColor: #1c2029; // live页面tab背景色
+@footLiveBorderColor: #403e4e; // live页面tab背景色
+
+// 其他
+@balanceColor: #fcdb06; // 金额颜色
+@whiteBalanceColor: #5a40ff; // 金额颜色
+@betslipLineColor: #e9e9f3; // 订单分隔线颜色
+@liveSplitline: #979797; // live 分割线
+@myBetWon: #ff4c2c; // mybet won状态
+
+.sprite-width(@sprite,@remUnit) {
+  width: extract(@sprite, 5) / @remUnit;
+}
+
+.sprite-height(@sprite,@remUnit) {
+  height: extract(@sprite, 6) / @remUnit;
+}
+
+.sprite-position(@sprite,@remUnit) {
+  @sprite-offset-x: extract(@sprite, 3) / @remUnit;
+  @sprite-offset-y: extract(@sprite, 4) / @remUnit;
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-size(@sprite,@remUnit) {
+  background-size: extract(@sprite, 7) / @remUnit extract(@sprite, 8) / @remUnit;
+}
+
+.sprite-image(@sprite,@remUnit) {
+  @sprite-image: extract(@sprite, 9);
+  background-image: e(%('url(%a.webp)', e(@sprite-image)));
+  .no-webps & {
+    background-image: e(%('url(%a)', e(@sprite-image)));
+  }
+}
+
+.sprite(@sprite,@remUnit) {
+  .sprite-image(@sprite,@remUnit);
+  .sprite-position(@sprite,@remUnit);
+  .sprite-width(@sprite,@remUnit);
+  .sprite-height(@sprite,@remUnit);
+  .sprite-size(@sprite,@remUnit);
+}

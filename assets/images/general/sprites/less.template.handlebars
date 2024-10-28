@@ -1,0 +1,21 @@
+{
+  // Default options
+  'functions': true,
+  'variableNameTransforms': ['dasherize']
+}
+
+{{#block "sprites-comment"}}
+
+{{/block}}
+{{#block "sprites"}}
+{{#each sprites}}
+@{{../spritesheet_info.strings.name}}-{{strings.name}}: {{x}} {{y}} {{offset_x}} {{offset_y}} {{width}} {{height}} {{total_width}} {{total_height}} '{{{escaped_image}}}' '{{name}}';
+{{/each}}
+{{/block}}
+{{#block "spritesheet"}}
+@{{spritesheet_info.strings.name_width}}: {{spritesheet.width}};
+@{{spritesheet_info.strings.name_height}}: {{spritesheet.height}};
+@{{spritesheet_info.strings.name_image}}: '{{{spritesheet.escaped_image}}}';
+@{{spritesheet_info.strings.name_sprites}}:{{#each sprites}} @{{../spritesheet_info.strings.name}}-{{strings.name}}{{/each}};
+@{{spritesheet_info.strings.name}}: {{spritesheet.width}} {{spritesheet.height}} '{{{spritesheet.escaped_image}}}' @{{spritesheet_info.strings.name_sprites}};
+{{/block}}

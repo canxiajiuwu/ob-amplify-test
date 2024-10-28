@@ -1,0 +1,234 @@
+// 公共样式
+// 怪异盒模型
+.cl-bsbb {
+  box-sizing: border-box;
+}
+
+// flex 布局样式
+// v-flex || v-flex="{}"
+.cl-flexcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// v-flex="{ type: 2 }"
+.cl-flexca {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+// v-flex="{ type: 1 }"
+.cl-flexcb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// v-flex="{ type: 3 }"
+.cl-flexcs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+// v-flex="{ type: 4 }"
+.cl-flexce {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// v-flex="{ type: 6 }"
+.cl-flexsc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+// v-flex="{ type: 7 }"
+.cl-flexsb {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.cl-flexec {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+// 定位居中(父元素需要除默认之外的定位属性)
+.cl-pacc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 本文样式
+// 超过一行文本替换为...
+.cl-oneLine {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// 超过三行文本替换为...
+.cl-threeLine {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.cl-h1,
+.cl-h2,
+.cl-h3,
+.cl-h4,
+.cl-h5,
+.cl-h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+// 按钮样式
+// 镂空 背景色为主题色
+.cl-lkButton {
+  min-width: @mainButtonWidth;
+  padding: 0 3rem/36;
+  height: @mainButtonHeight;
+  border-radius: @mainButtonRadius;
+  background-color: @mainThemeColor;
+  color: @mainButtonComparedColor;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: @mainButtonFz;
+}
+
+// 填充 文字为主题色
+.cl-tcButton {
+  min-width: @mainButtonWidth;
+  height: @mainButtonHeight;
+  padding: 0 3rem/36;
+  border-radius: @mainButtonRadius;
+  background-color: @mainButtonComparedColor;
+  color: @mainThemeColor;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: @mainButtonFz;
+}
+
+// odds按钮样式
+// 未选中
+.cl-noOddsButton {
+  width: @oddsButtonWidth;
+  height: @oddsButtonHeight;
+  border-radius: @oddsButtonRadius;
+  background-color: @noOddsColor;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: @oddsButtonFz;
+  color: @oddsButtonColor;
+}
+
+// 选中
+.cl-oddsButton {
+  width: @oddsButtonWidth;
+  height: @oddsButtonHeight;
+  border-radius: @oddsButtonRadius;
+  background-color: @oddsColor;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: @oddsButtonFz;
+  color: @oddsButtonColor;
+}
+
+// live页面未选中
+.cl-liveNoOddsButton {
+  width: @oddsButtonWidth;
+  height: @oddsButtonHeight;
+  border-radius: @oddsButtonRadius;
+  background-color: @liveNoOddsColor;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: @oddsButtonFz;
+  color: @liveOddsButtonColor;
+}
+
+// live页面选中
+.cl-liveOddsButton {
+  width: @oddsButtonWidth;
+  height: @oddsButtonHeight;
+  border-radius: @oddsButtonRadius;
+  background-color: @liveOddsColor;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: @oddsButtonFz;
+  color: @liveOddsButtonColor;
+}
+
+// 业务按钮上锁覆盖
+.cl-canNotOddsLock {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: @oddsButtonRadius;
+  background-color: @noOddsColor;
+  left: 0;
+  top: 0;
+}
+
+// mybet详情，镂空按钮
+.cl-mybetLineButton {
+  box-sizing: border-box;
+  width: 81rem/36;
+  height: 33rem/36;
+  border-radius: 6rem/36;
+  background-color: #fff;
+  color: #000;
+  white-space: nowrap;
+  font-size: 11rem/36;
+  border: 1px solid #000;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+// 图标旋转
+.cl-iconRotate-180 {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  transition: transform 0.3s;
+}
+
+.cl-iconRotate180 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.cl-iconRotate-90 {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+
+.cl-iconRotate90 {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.cl-iconRotate0 {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+// 主题卡片阴影
+.cl-indexCardShadow {
+  box-shadow: 0 1rem/36 4rem/36 0 rgba(206, 206, 222, 0.8);
+}

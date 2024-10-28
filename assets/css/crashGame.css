@@ -1,0 +1,1257 @@
+.onebetPopUps-wrap .head {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 0.41666667rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 0.97222222rem;
+  border-bottom: 0.01388889rem solid #d4dae1;
+}
+.onebetPopUps-wrap .head .title {
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.onebetPopUps-wrap .head .closeBox {
+  margin-right: 0.27777778rem;
+}
+.onebetPopUps-wrap .head .closeBox .closeIcon {
+  height: 0.52777778rem;
+  width: 0.52777778rem;
+}
+.onebetPopUps-wrap .wrapBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent {
+  color: #000;
+  box-sizing: border-box;
+  padding: 0.55555556rem 0.27777778rem 1.11111111rem;
+  font-size: 0.41666667rem;
+  line-height: 0.41666667rem;
+  flex: 1;
+  overflow-y: auto;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .videoSoltBox {
+  margin-bottom: 0.55555556rem;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .item {
+  margin-bottom: 0.55555556rem;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .item .left {
+  margin-right: 0.13888889rem;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .item .qaIcon {
+  width: 0.41666667rem;
+  height: 0.41666667rem;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .item .itemTop {
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 0.27777778rem;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .item .itemBottom {
+  display: flex;
+  font-weight: 400;
+}
+.onebetPopUps-wrap .wrapBox .howToPlayContent .item .itemBottom .right .a {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.55555556rem;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .howToPlayContent
+  .item
+  .itemBottom
+  .right
+  .a
+  .hashWord {
+  word-break: break-all;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent {
+  flex: 1;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 0.47222222rem 0.27777778rem 1.11111111rem;
+  font-size: 0.30555556rem;
+  font-weight: 400;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent .cardBox {
+  box-sizing: border-box;
+  padding: 0.27777778rem 0.27777778rem 0.44444444rem;
+  border: 0.01388889rem solid #d4dae1;
+  border-radius: 0.08333333rem;
+  line-height: 0.47222222rem;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent .label {
+  color: #74747c;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent .canClick {
+  color: #f77800;
+  text-decoration: underline;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent .colorRed {
+  color: #e62d0e;
+}
+.onebetPopUps-wrap .wrapBox .betInfoContent .colorGreen {
+  color: #0b9f2e;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 0.55555556rem 0.27777778rem 0.83333333rem;
+  font-size: 0.30555556rem;
+  font-weight: 400;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .userInfoBox {
+  color: #000;
+  border-bottom: 0.01388889rem solid #d4dae1;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .userInfoBox .item {
+  display: flex;
+  align-items: center;
+  line-height: 0.47222222rem;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .userStatsContent
+  .userInfoBox
+  .item
+  .itemLeft
+  .avatar {
+  margin-right: 0.19444444rem;
+  height: 1.19444444rem;
+  width: 1.19444444rem;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .userStatsContent
+  .userInfoBox
+  .item
+  .itemLeft
+  .avatar
+  img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .userStatsContent
+  .userInfoBox
+  .item
+  .itemRight
+  .nickName {
+  font-size: 0.41666667rem;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .userInfoBox .item .leftBox {
+  color: #74747c;
+  margin-right: 0.83333333rem;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .userInfoBox .item .rightBox {
+  color: #000;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .StatsChartBox {
+  flex: 1;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .avatarBottom {
+  height: 0.36111111rem;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .userInfoBottom {
+  height: 0.41666667rem;
+}
+.onebetPopUps-wrap .wrapBox .userStatsContent .statsChartTop {
+  height: 0.63888889rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  font-size: 0.30555556rem;
+  font-weight: 400;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .topBox {
+  padding: 0.27777778rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.27777778rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .box {
+  box-sizing: border-box;
+  height: 0.63888889rem;
+  display: flex;
+  align-items: center;
+  padding: 0.13888889rem;
+  background-color: #f2f2f4;
+  border-radius: 0.08333333rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .box .icon {
+  width: 0.36111111rem;
+  height: 0.36111111rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .box .leftIcon {
+  margin-right: 0.16666667rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .box .rightIcon {
+  margin-left: 0.16666667rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .box:active {
+  background-color: rgba(242, 242, 244, 0.8);
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .left {
+  padding-right: 0.36111111rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .switchBox .right {
+  padding-left: 0.36111111rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .infoBox {
+  box-sizing: border-box;
+  padding: 0.27777778rem 0.36111111rem 0.27777778rem 0.22222222rem;
+  border-radius: 0.08333333rem;
+  border: 0.01388889rem solid #d4dae1;
+  margin-bottom: 0.13888889rem;
+  overflow-y: overlay;
+  height: 2.52777778rem;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .infoBox .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .infoBox .item .leftItem {
+  color: #74747c;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .infoBox .item .rightItem {
+  color: #000;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .infoBox
+  .item
+  .rightItem
+  .hashBox {
+  box-sizing: border-box;
+  padding: 0.05555556rem 0.13888889rem;
+  max-width: 4.66666667rem;
+  border: 0.01388889rem solid #979797;
+  background-color: #f4f4f4;
+  border-radius: 0.08333333rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .infoBox
+  .item
+  .rightItem
+  .hashBox:active {
+  background-color: rgba(244, 244, 244, 0.8);
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .historyBox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .historyBox .historyHead {
+  height: 0.83333333rem;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  color: #333;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyHead
+  .headItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.onebetPopUps-wrap .wrapBox .roundInfoContent .historyBox .historyContent {
+  flex: 1;
+  overflow-y: overlay;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .hisItem {
+  box-sizing: border-box;
+  height: 0.83333333rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  border-bottom: 0.01388889rem solid #d4dae1;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .hisItem
+  .itemA {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .hisItem
+  .itemA
+  .widthBox {
+  padding-left: 0.13888889rem;
+  width: 1.80555556rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .hisItem
+  .itemA
+  .nameUnderL {
+  text-decoration: underline;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .hisItem
+  .itemview {
+  text-decoration: underline;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .hisItem:last-child {
+  border-bottom: 0;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .colorRed {
+  color: #e62d0e;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .colorGreen {
+  color: #0b9f2e;
+}
+.onebetPopUps-wrap
+  .wrapBox
+  .roundInfoContent
+  .historyBox
+  .historyContent
+  .colorOrange {
+  color: #f77800;
+}
+.virtualKeyboardBox {
+  color: #000;
+  font-weight: 500;
+  font-size: 0.83333333rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.virtualKeyboardBox .boxShadowHeight {
+  height: 0.30555556rem;
+}
+.virtualKeyboardBox .VKBContent {
+  flex: 1;
+  background-color: #fff;
+  box-shadow: 0 -0.11111111rem 0.19444444rem 0.05555556rem rgba(0, 0, 0, 0.1);
+}
+.virtualKeyboardBox .VKBContent .VKBHead {
+  position: relative;
+  box-sizing: border-box;
+  height: 1.11111111rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.30555556rem;
+}
+.virtualKeyboardBox .VKBContent .VKBHead .VKBHLeft {
+  margin-left: 0.27777778rem;
+}
+.virtualKeyboardBox .VKBContent .VKBHead .VKBHLeft .imgIcon {
+  width: 0.94444444rem;
+  height: 0.41666667rem;
+}
+.virtualKeyboardBox .VKBContent .VKBHead .VKBHRght {
+  margin-right: 0.27777778rem;
+  font-weight: bold;
+  color: #4c50fa;
+}
+.virtualKeyboardBox .VKBContent .VKBHead .VKBHMiddle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+}
+.virtualKeyboardBox .VKBContent .keyboard {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.01388889rem solid #dcdee0;
+  flex-wrap: wrap;
+}
+.virtualKeyboardBox .VKBContent .keyboard .item {
+  border-bottom: 0.01388889rem solid #dcdee0;
+  border-left: 0.01388889rem solid #dcdee0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 33.33333333%;
+  height: 1.86111111rem;
+}
+.virtualKeyboardBox .VKBContent .keyboard .item img {
+  width: 0.94444444rem;
+}
+.virtualKeyboardBox .VKBContent .keyboard .item .point {
+  padding-bottom: 0.41666667rem;
+}
+.virtualKeyboardBox .VKBContent .keyboard .itemVisibility {
+  width: 66.66666667%;
+}
+.virtualKeyboardBox .VKBContent .keyboard .item:nth-child(3n + 1) {
+  border-left: 0;
+}
+.LBguideDialogBox-wrap {
+  font-size: 0.30555556rem;
+  font-weight: 400;
+  color: #000;
+}
+.LBguideDialogBox-wrap .LBGDBox {
+  padding: 0.27777778rem;
+  background-color: #fff08c;
+  border-radius: 0.08333333rem;
+  width: 6.38888889rem;
+}
+.LBguideDialogBox-wrap .LBGDBox .pointer {
+  border: 0.25rem solid transparent;
+}
+.LBguideDialogBox-wrap .LBGDBox .pointertop {
+  border-bottom-color: #fff08c;
+}
+.LBguideDialogBox-wrap .LBGDBox .pointerbottom {
+  border-top-color: #fff08c;
+}
+.LBguideDialogBox-wrap .LBGDBox .pointerleft {
+  border-right-color: #fff08c;
+}
+.LBguideDialogBox-wrap .LBGDBox .pointerright {
+  border-left-color: #fff08c;
+}
+.LBguideDialogBox-wrap .LBGDBox .bottonTop {
+  height: 0.36111111rem;
+}
+.LBguideDialogBox-wrap .LBGDBox .content {
+  min-height: 1.38888889rem;
+}
+.LBguideDialogBox-wrap .LBGDBox .nextBox {
+  font-size: 0.38888889rem;
+  display: flex;
+}
+.LBguideDialogBox-wrap .LBGDBox .nextBox div {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LBguideDialogBox-wrap .LBGDBox .nextBox .LBNext {
+  box-sizing: border-box;
+  border: 0.02777778rem solid #000;
+  height: 0.83333333rem;
+  border-radius: 0.41666667rem;
+  opacity: 1;
+}
+.LBguideDialogBox-wrap .LBGDBox .nextBox .LBNext:active {
+  opacity: 0.7;
+}
+.LBguideDialogBox-wrap .LBGDBox .okBox {
+  display: flex;
+  justify-content: center;
+}
+.LBguideDialogBox-wrap .LBGDBox .okBox .LBok {
+  box-sizing: border-box;
+  font-size: 0.38888889rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 0.83333333rem;
+  border: 0.02777778rem solid #000;
+  border-radius: 0.41666667rem;
+  opacity: 1;
+}
+.LBguideDialogBox-wrap .LBGDBox .okBox .LBok:active {
+  opacity: 0.7;
+}
+.HTPVideo-wrap .itemTop {
+  text-transform: uppercase;
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 0.27777778rem;
+}
+.HTPVideo-wrap .itemTop .left {
+  margin-right: 0.13888889rem;
+}
+.HTPVideo-wrap .itemTop .qaIcon {
+  width: 0.41666667rem;
+  height: 0.41666667rem;
+}
+.Cashout-wrap {
+  background-color: #fff;
+}
+.chart-wrap {
+  background: linear-gradient(180deg, #f3f5fd 0%, #dbe0f0 100%);
+}
+.chart-wrap .chartBox {
+  height: 6.62962963rem;
+}
+.chart-wrap .online-wrap {
+  position: absolute;
+  top: 0.24074074rem;
+  left: 0;
+  display: flex;
+}
+.chart-wrap .online-wrap > div {
+  margin-left: 0.2962963rem;
+  color: #74747c;
+}
+.chart-wrap .online-wrap > div span {
+  color: #000;
+}
+.chart-wrap .float-wrap .history {
+  padding: 0 0.2962963rem;
+  bottom: 0.23148148rem;
+}
+.chart-wrap .float-wrap .history .item {
+  color: #0b9f2e;
+  width: 1.26851852rem;
+  height: 0.64814815rem;
+  border-radius: 0.07407407rem;
+  border: 0.01851852rem solid #b9ddc2;
+  background: #ffffff;
+  margin-left: 0.09259259rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chart-wrap .float-wrap .history .item.red {
+  color: #e62d0e;
+  border: 0.01851852rem solid #fecbc2;
+}
+.chart-wrap .float-wrap .busted {
+  position: absolute;
+  width: 10rem;
+  height: 6.63888889rem;
+  background: #00000080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  color: #fff;
+}
+.chart-wrap .float-wrap .busted span {
+  color: #ffe400;
+  font-size: 0.91666667rem;
+}
+.chart-wrap .float-wrap .process.process_cashout {
+  width: 10rem;
+  height: 6.63888889rem;
+  background: #00000080;
+  top: 0;
+  font-weight: 400;
+}
+.chart-wrap .float-wrap .process.process_cashout .cashout {
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
+  margin-top: 0;
+  font-size: 0.47222222rem;
+}
+.chart-wrap .float-wrap .process.process_cashout .cashout .right {
+  color: #ffe400;
+  margin-left: 0.13888889rem;
+}
+.chart-wrap .float-wrap .process.process_cashout .cashout1 {
+  flex-direction: column;
+}
+.chart-wrap .float-wrap .process.process_cashout .cashout1 .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  font-size: 0.75rem;
+}
+.chart-wrap
+  .float-wrap
+  .process.process_cashout
+  .cashout1
+  .right
+  .TQnumUpdateBox {
+  padding-top: 0.02777778rem;
+}
+.chart-wrap .float-wrap .process.process_cashout .cashout1 .right .numUpdate {
+  width: 0.44444444rem;
+  height: 0.66666667rem;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.chart-wrap
+  .float-wrap
+  .process.process_cashout
+  .cashout1
+  .right
+  .numUpdate
+  span {
+  display: inline-block;
+  line-height: 0.77777778rem;
+  text-align: center;
+  overflow: hidden;
+}
+.chart-wrap .float-wrap .process.process_cashout .cashout1 .right .numUpdate i {
+  color: #ffe400;
+  font-size: 0.75rem;
+  width: 0.44444444rem;
+  height: 0.77777778rem;
+  display: block;
+  text-align: center;
+  font-style: normal;
+}
+.chart-wrap .float-wrap .process.process_cashout .bgImage {
+  position: relative;
+  top: -0.55555556rem;
+  height: 3.05555556rem;
+}
+.chart-wrap .float-wrap .process.process_cashout .bgImage .cashImage {
+  width: 4.72222222rem;
+}
+.chart-wrap .float-wrap .process.process_cashout .bgImage .light {
+  position: absolute;
+  left: 3.05555556rem;
+  top: 0.27777778rem;
+  width: 4.16666667rem;
+  z-index: -1;
+  animation: lightRotate 8s linear infinite;
+}
+@keyframes lightRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.chart-wrap .float-wrap .process.process_cashout span {
+  color: #ffe400;
+}
+.chart-wrap .float-wrap .process .odds {
+  color: #4c50fa;
+}
+.chart-wrap .float-wrap .flag {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0.19444444rem;
+}
+.chart-wrap .float-wrap .flag .fade-enter-active {
+  transform: translateX(0%);
+  transition: all 0.5s ease-in-out;
+}
+.chart-wrap .float-wrap .flag .fade-enter {
+  transform: translateX(100%);
+}
+.chart-wrap .float-wrap .flag .betAccepted {
+  position: relative;
+  background-color: #ff8b08;
+  height: 0.55555556rem;
+  font-size: 0.30555556rem;
+  line-height: 0.55555556rem;
+  padding: 0 0.25rem;
+  overflow: hidden;
+  border-radius: 0.27777778rem 0 0 0.27777778rem;
+}
+.chart-wrap .float-wrap .flag .betAccepted.yourRound {
+  background-color: #03c382;
+}
+.chart-wrap .float-wrap .flag .betAccepted::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.27777778rem 0 0 0.27777778rem;
+  background: linear-gradient(
+    50deg,
+    transparent 15%,
+    #ffffff79 30%,
+    transparent 45%
+  );
+  animation: translateAnimation 2500ms linear infinite;
+}
+@keyframes translateAnimation {
+  from {
+    transform: translateX(-10%);
+  }
+  40%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+.chart-wrap .nextRound {
+  font-size: 0.64814815rem;
+  font-weight: bold;
+  color: #000000;
+}
+.CashoutHead {
+  height: auto;
+}
+.CashoutHead .demoWrap {
+  height: 0.92592593rem;
+  position: relative;
+  padding: 0.27777778rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.CashoutHead .demoWrap .sliderButton {
+  width: 0.75925926rem;
+  height: 0.46296296rem;
+  background: #4c50fa;
+  border-radius: 0.23148148rem;
+  background-color: #4c50fa;
+  position: relative;
+}
+.CashoutHead .demoWrap .sliderButton .slider {
+  width: 0.2962963rem;
+  height: 0.2962963rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.08333333rem;
+  right: 0.08333333rem;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+.CashoutHead .demoWrap .sliderButton .active {
+  right: 0.37962963rem;
+}
+.CashoutHead .demoWrap .sliderButton .demo {
+  font-size: 0.25925926rem;
+  line-height: 0.25925926rem;
+  color: #363636;
+  position: absolute;
+  top: 0.09259259rem;
+  left: 0.94444444rem;
+}
+.CashoutHead .demoWrap .maxBet {
+  font-size: 0.31481481rem;
+  color: #74747c;
+}
+.CashoutHead .demoWrap .maxBet .num {
+  color: #000;
+}
+.CashoutControls-wrap {
+  padding: 0;
+}
+.CashoutControls-wrap .wrap {
+  margin-top: 0.42592593rem;
+  padding: 0 0.27777778rem;
+  box-sizing: border-box;
+}
+.CashoutControls-wrap .controlsBox .amountBox {
+  width: 4.62962963rem;
+  flex: 0;
+}
+.CashoutControls-wrap .controlsBox .amountBox .name {
+  font-weight: bold;
+  color: #333333;
+  padding-bottom: 0.25rem;
+  font-size: 0.31481481rem;
+  line-height: 0.31481481rem;
+  white-space: nowrap;
+}
+.CashoutControls-wrap .controlsBox .amountBox .amountInput {
+  background-color: #fff;
+  width: 4.62962963rem;
+  height: 1.09259259rem;
+}
+.CashoutControls-wrap .controlsBox .amountBox .amountInput .amount {
+  width: 4.62962963rem;
+  height: 1.09259259rem;
+  position: relative;
+}
+.CashoutControls-wrap .controlsBox .amountBox .amountInput .amount .amountMask {
+  width: 4.62962963rem;
+  height: 1.09259259rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.CashoutControls-wrap .controlsBox .amountBox .amountInput input {
+  width: 4.62962963rem;
+  height: 1.09259259rem;
+  background: #f4f4f4;
+  border-radius: 0.09259259rem;
+  border: 0.01388889rem solid #d4dae1;
+  color: #000;
+  font-size: 0.40740741rem;
+  font-weight: bold;
+}
+.CashoutControls-wrap .controlsBox .amountBox .amountInput input.light {
+  outline: 0.05555556rem solid #ffc702;
+  border: none;
+}
+.CashoutControls-wrap .amountBox2 .amountInput .amount {
+  position: relative;
+}
+.CashoutControls-wrap .amountBox2 .amountInput .amount .autoCashoutMask {
+  width: 4.62962963rem;
+  height: 1.09259259rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.CashoutControls-wrap .forecasted {
+  margin-top: 0.5rem;
+  color: #74747c;
+}
+.CashoutControls-wrap .forecasted .orange {
+  color: #000;
+}
+.CashoutControls-wrap .button {
+  height: 1.11111111rem;
+  line-height: 1.11111111rem;
+  background: #4c50fa;
+  border-radius: 0.08333333rem;
+  margin: 0.11111111rem 0 0.33333333rem;
+  box-sizing: border-box;
+}
+.CashoutControls-wrap .button.cancel {
+  border: 0.02777778rem solid #4c50fa;
+  background: #fff;
+  color: #4c50fa;
+}
+.CashoutControls-wrap .button.cashout {
+  background: #1cd47b;
+  color: #fff;
+}
+.CashoutControls-wrap .button.coins {
+  background: #fcdb06;
+  color: #000;
+}
+.CashoutControls-wrap .button.noCashOutClick {
+  opacity: 0.5;
+}
+.CashoutControls-wrap .button.noBetClick {
+  background: #d0d0d0;
+  color: #fff;
+}
+.CashoutControls-wrap .button.animationCss {
+  animation: buttonScale 300ms;
+}
+@keyframes buttonScale {
+  from {
+    scale: 1;
+    font-size: 0.46296296rem;
+  }
+  80% {
+    scale: 0.95;
+    font-size: 0.37037037rem;
+  }
+  to {
+    scale: 1;
+    font-size: 0.46296296rem;
+  }
+}
+.CashoutControls-wrap .button .betWrod {
+  position: relative;
+}
+.CashoutControls-wrap .button .nextRound {
+  position: absolute;
+  right: -0.19444444rem;
+  top: 50%;
+  transform: translate(100%, -50%);
+  font-size: 0.36111111rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.CashoutControls-wrap .howPlay {
+  font-size: 0.31481481rem;
+  color: #4c50fa;
+  line-height: 0.47222222rem;
+  margin-bottom: 0.2037037rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.CashoutControls-wrap .bannerListBox .wh_content .wh_indicator {
+  height: 0.44444444rem;
+}
+.list-wrap {
+  padding: 0;
+}
+.list-wrap .layered {
+  width: 10rem;
+  height: 0.27777778rem;
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #f2f2f4 100%);
+}
+.list-wrap .tab-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #feffff;
+  position: relative;
+  height: 0.83333333rem;
+  border-bottom: 0.00925926rem solid #d4dae1;
+}
+.list-wrap .tab-wrap .button {
+  font-size: 0.33333333rem;
+  font-weight: bold;
+  margin: 0;
+  color: #999ad3;
+  background-color: #fff;
+}
+.list-wrap .tab-wrap .button.select {
+  background-color: #fff;
+  color: #4c50fa;
+}
+.list-wrap .tab-wrap .online {
+  width: 3.33333333rem;
+  height: 0.05555556rem;
+  background-color: #4c50fa;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+.list-wrap .tab-wrap > div {
+  width: 3.33333333rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-wrap .list-box {
+  background-color: #f5f5f5;
+  color: #333333;
+  font-size: 0.33333333rem;
+}
+.list-wrap .list-box .title {
+  font-size: 0.33333333rem;
+  height: 0.83333333rem;
+  display: flex;
+  align-items: center;
+}
+.list-wrap .list-box .title .name {
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+}
+.list-wrap .list-box .list {
+  font-size: 0.33333333rem;
+  height: 9.47222222rem;
+  max-height: 9.47222222rem;
+  background-color: #fff;
+}
+.list-wrap .list-box .list .item {
+  font-size: 0.33333333rem;
+  height: 0.83333333rem;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: #0b9f2e;
+}
+.list-wrap .list-box .list .item.yellow {
+  color: #f77800;
+}
+.list-wrap .list-box .list .item .name {
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+  text-align: left;
+}
+.list-wrap .list-box .list .item .nameUnderL {
+  text-decoration: underline;
+}
+.list-wrap .list-box .list .item .number {
+  color: #4c50fa;
+  text-decoration: underline;
+}
+.list-wrap .list-box .list .item .result {
+  color: #0b9f2e;
+}
+.list-wrap .list-box .list .item .red {
+  color: #e62d0e;
+}
+.list-wrap .list-box .list .item .yellow {
+  color: #f77800;
+}
+.list-wrap .list-box .list .item .green {
+  color: #0b9f2e;
+}
+.list-wrap .list-box .list .item .viewWrap .view {
+  color: #f77800;
+  text-decoration: underline;
+}
+.list-wrap .list-box .list .item .hashNumWrap .hashNum {
+  width: 1.27777778rem;
+  height: 0.5rem;
+  border-radius: 0.09259259rem;
+  border: 0.01851852rem solid #4c50fa;
+  color: #4c50fa;
+  font-size: 0.27777778rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-wrap .list-box .list .item .hashNumWrap .hashNum span {
+  width: 1.22222222rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.list-wrap .list-box .list .theme {
+  color: #333;
+}
+.list-wrap .list-box .list .userItem {
+  background-color: #ebeef9;
+}
+.list-wrap .list-box .list .gray {
+  color: #333;
+}
+.list-wrap .chatListBox {
+  background-color: #fff;
+  padding: 0.40740741rem 0.27777778rem 0.40740741rem 0.2962963rem;
+  position: relative;
+}
+.list-wrap .chatListBox .listWrap {
+  padding-top: 0.27777778rem;
+  padding-left: 0.24074074rem;
+  padding-bottom: 0.18518519rem;
+  background-color: #f4f4f4;
+}
+.list-wrap .chatListBox .listWrap .list {
+  height: 7.82407407rem;
+  background-color: #f4f4f4;
+  font-size: 0.39814815rem;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  border-radius: 0.18518519rem;
+}
+.list-wrap .chatListBox .listWrap .list .listBox {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: no-wrap;
+  align-items: baseline;
+}
+.list-wrap .chatListBox .listWrap .list .item {
+  display: flex;
+  font-size: 0.30555556rem;
+  line-height: 0.41666667rem;
+  padding-top: 0.08333333rem;
+}
+.list-wrap .chatListBox .listWrap .list .item .name {
+  margin-left: 0.18518519rem;
+  margin-right: 0.09259259rem;
+}
+.list-wrap .chatListBox .listWrap .list .item > div {
+  text-align: left;
+}
+.list-wrap .chatListBox .chatWrap {
+  position: absolute;
+  bottom: 0.68518519rem;
+  left: 0.59259259rem;
+}
+.list-wrap .chatListBox .chatWrap .chat {
+  width: 8.85185185rem;
+  height: 1.11111111rem;
+  background: #ffffff;
+  border-radius: 0.55555556rem;
+  outline: none;
+  border: 0;
+  padding-left: 1.12962963rem;
+  padding-right: 1.05555556rem;
+  box-sizing: border-box;
+}
+.list-wrap .chatListBox .chatWrap .chat::placeholder {
+  color: #a2a2a7;
+}
+.list-wrap .chatListBox .chatWrap .button {
+  width: 1.75925926rem;
+  height: 0.74074074rem;
+  background: #fcdb06;
+  border-radius: 0.5rem;
+  font-size: 0.31481481rem;
+  position: absolute;
+  bottom: 0.18518519rem;
+  right: 0.18518519rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-wrap .chatListBox .chatWrap .messageIcon {
+  width: 0.42592593rem;
+  height: 0.42592593rem;
+  position: absolute;
+  bottom: 0.37037037rem;
+  left: 0.52777778rem;
+}
+.list-wrap .chatListBox .fill {
+  width: 9.41666667rem;
+  height: 1.66666667rem;
+  background-color: #f4f4f4;
+  border-radius: 0 0 0.18518519rem 0.18518519rem;
+  margin-top: -0.18518519rem;
+}
+.list-wrap .chatListBox .list {
+  color: #a2a2a7;
+}
+.list-wrap .chatListBox .list .name {
+  color: #4c50fa;
+}
+.list-wrap .chatListBox .list .message {
+  color: #1c2029;
+}
+.CashoutFooter {
+  background-color: #1c2029;
+}
+.NewbieGuide {
+  color: #000;
+  font-size: 0.30555556rem;
+  line-height: 0.41666667rem;
+}
+.NewbieGuide .Guide {
+  width: 6.36111111rem;
+  background: #fff08c;
+  box-shadow: none;
+  border-radius: 0.18518519rem;
+  padding: 0.38888889rem 0.22222222rem 0.36111111rem 0.38888889rem;
+  box-sizing: border-box;
+  position: absolute;
+  top: 3.14814815rem;
+  left: 2.46296296rem;
+}
+.NewbieGuide .Guide .title {
+  font-size: 0.30555556rem;
+}
+.NewbieGuide .Guide .buttonGuide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.19444444rem;
+  font-size: 0.38888889rem;
+  line-height: 0.38888889rem;
+}
+.NewbieGuide .Guide .buttonGuide .skip {
+  width: 2.77777778rem;
+  height: 0.38888889rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+.NewbieGuide .Guide .buttonGuide .next {
+  width: 2.69444444rem;
+  height: 0.83333333rem;
+  border-radius: 0.41666667rem;
+  border: 0.02777778rem solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff08c;
+}
+.NewbieGuide .Guide .look {
+  margin-top: 0.22222222rem;
+}
+.NewbieGuide .Guide .triangle {
+  width: 0;
+  height: 0;
+  border: 0.25rem solid transparent;
+  border-bottom: 0.25rem solid #fff08c;
+  position: absolute;
+  top: -0.5rem;
+  left: 3.12962963rem;
+}
+.NewbieGuide .Guide1 {
+  position: absolute;
+  top: 1.38888889rem;
+  left: 1.75rem;
+}
+.NewbieGuide .Guide2 {
+  position: absolute;
+  top: 8.94444444rem;
+  left: 1.58333333rem;
+}
+.NewbieGuide .Guide3 {
+  position: absolute;
+  top: 11.16666667rem;
+  left: 3.33333333rem;
+}
+.NewbieGuide .Guide4 {
+  position: absolute;
+  top: 13.44444444rem;
+  left: 1.69444444rem;
+}
+.NewbieGuide .Guide5 {
+  position: absolute;
+  top: 2.36111111rem;
+  left: 0.13888889rem;
+}
+.NewbieGuide .Guide5 .triangle {
+  left: 0.27777778rem;
+}
+.rushHour-warp .rushHourBox {
+  z-index: 9;
+}
