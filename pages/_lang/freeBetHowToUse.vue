@@ -16,7 +16,7 @@
         <div class="cl-stepBox">
           <h3 class="cl-h3 cl-art">{{ $t('freebetHow.art') }}</h3>
           <div class="cl-step1 cl-step">
-            <Nuxtimg
+            <img
               :src="`/images/lang/${locale}/${country}/freeBetHow/1.png`"
               alt="onebet | step1"
             />
@@ -26,7 +26,7 @@
             <div v-html="$t('freebetHow.art1-1')"></div>
           </h3>
           <div class="cl-step2 cl-step">
-            <Nuxtimg
+            <img
               :src="`/images/lang/${locale}/${country}/freeBetHow/2.png`"
               alt="onebet | step2"
             />

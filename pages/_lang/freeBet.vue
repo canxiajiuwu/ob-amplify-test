@@ -18,7 +18,7 @@
         <h3 class="cl-h3 cl-art">{{ $t('freeBet.predict') }}</h3>
         <h2 class="cl-h2 cl-money">{{ $t('freeBet.money') }}</h2>
       </div>
-      <Nuxtimg src="/images/freebet/freebetBanner.png" alt="freebet" />
+      <img src="/images/freebet/freebetBanner.png" alt="freebet" />
     </div>
 
     <div style="height: calc(10rem / 36)" />

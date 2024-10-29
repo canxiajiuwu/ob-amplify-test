@@ -8,7 +8,7 @@ import topMsgPop from '@/components/global/topMsgPop'
 import cardPacks from '@/components/global/cardPacks'
 import drawer from '@/components/global/drawer'
 import globalFilter from '@/components/global/globalFilter'
-import nuxtimg from '@/components/global/nuxtimg'
+// import nuxtimg from '@/components/global/nuxtimg'
 
 import 'vant/lib/pull-refresh/index.css'
 ;[
@@ -20,7 +20,7 @@ import 'vant/lib/pull-refresh/index.css'
   cardPacks,
   drawer,
   globalFilter,
-  nuxtimg,
+  // nuxtimg,
   Switch,
   PullRefresh,
   Swipe,

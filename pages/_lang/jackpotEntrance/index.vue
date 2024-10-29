@@ -2,7 +2,7 @@
   <div class="cl-grandJackpot-wrap">
     <div class="cl-flexcc">
       <div class="cl-banner">
-        <nuxtimg
+        <img
           class="cl-banner_pic"
           src="/images/jackpot/grandJackpot.png"
           alt="onebet | Grand Jackpot"

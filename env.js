@@ -1,6 +1,6 @@
 export default {
   // 开发环境
-  dev: {
+  development: {
     NODE_ENV: 'development', // 环境名称
     ENV_CONFIG: 'development',
     SPORTURL: 'https://staging-api.onebet.ug/sports',
@@ -85,7 +85,8 @@ export default {
     WsCmUrl: 'wss://cm-bet-live.onebet.ug/sport',
     hostname: 'https://www.onebet.ug',
     hostnamecm: 'https://www.onebet.cm',
-    STATICURL: 'https://static-sport.onebet.cm/ssr-static',
+    // STATICURL: 'https://static-sport.onebet.cm/ssr-static',
+    STATICURL: '',
     gamesConfigUrl: 'https://static-sport.onebet.cm/display/',
     API_CH_cm: 'https://cdn-api.onebet.cm/onegame',
     xFootball_URL_APP: 'https://h5.xfootball.net',

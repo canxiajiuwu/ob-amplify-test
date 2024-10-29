@@ -6,7 +6,7 @@
     "webpack": "bin/webpack.js"
   },
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev nuxi dev",
+    "dev": "nuxi dev",
     "build:staging": "cross-env NODE_ENV=staging nuxt build",
     "start:staging": "cross-env NODE_ENV=staging nuxt start",
     "build": "cross-env NODE_ENV=production nuxi build",

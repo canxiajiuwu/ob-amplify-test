@@ -22,7 +22,7 @@
     <div class="cl-content">
       <div class="cl-banner">
         <div class="cl-cropBox">
-          <nuxtimg
+          <img
             class="cl-bgimg"
             src="/images/hottestTickets/bg.png"
             alt="onebet | hottestTickets"

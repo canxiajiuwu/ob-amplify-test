@@ -17,7 +17,7 @@
         </h1>
         <h1 class="cl-h1 cl-item2">{{ $t('inviteFriend.art') }}</h1>
       </div>
-      <nuxtimg
+      <img
         class="cl-bgImg"
         src="/images/invite/bg.png"
         alt="onebet | inviteFriends"

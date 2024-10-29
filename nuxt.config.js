@@ -2,7 +2,7 @@
 // 引入环境配置
 import { defineNuxtConfig } from '@nuxt/bridge'
 import env from './env'
-import { routes } from './static/js/sitemap.js'
+// import { routes } from './static/js/sitemap.js'
 // // eslint-disable-next-line nuxt/no-cjs-in-config
 // const CopyPlugin = require('copy-webpack-plugin')
 // // eslint-disable-next-line nuxt/no-cjs-in-config
@@ -173,7 +173,7 @@ export default defineNuxtConfig({
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
     // 添加设置scss变量的插件
     '@nuxtjs/style-resources',
     // // https://go.nuxtjs.dev/axios
@@ -181,27 +181,27 @@ export default defineNuxtConfig({
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // 获取cookie
-    'cookie-universal-nuxt',
+    'cookie-universal-nuxt'
     // nuxt/image 插件
-    '@nuxt/image'
+    // '@nuxt/image'
   ],
 
   pageTransition: {
     mode: 'out-in'
   },
 
-  sitemap: {
-    hostname: 'https://www.onebet.cm/', // 你的具体的网址
-    path: '/sitemap.xml',
-    cacheTime: 24 * 60 * 60 * 1000,
-    // gzip: true,
-    defaults: {
-      changefreq: 'daily',
-      priority: 1,
-      lastmod: new Date()
-    },
-    routes
-  },
+  // sitemap: {
+  //   hostname: 'https://www.onebet.cm/', // 你的具体的网址
+  //   path: '/sitemap.xml',
+  //   cacheTime: 24 * 60 * 60 * 1000,
+  //   // gzip: true,
+  //   defaults: {
+  //     changefreq: 'daily',
+  //     priority: 1,
+  //     lastmod: new Date()
+  //   },
+  //   routes
+  // },
 
   // 手动配置@nuxtjs/style-resources
   styleResources: {
@@ -305,17 +305,17 @@ export default defineNuxtConfig({
       // }
       // }
     },
-    publicPath:
-      ENV.NODE_ENV === 'production'
-        ? 'https://static-sport.onebet.cm/ssr-static/'
-        : 'https://static-sport.onebet.cm/ssr-static-staging/',
+    publicPath: '',
+    // ENV.NODE_ENV === 'production'
+    //   ? 'https://static-sport.onebet.cm/ssr-static/'
+    //   : 'https://static-sport.onebet.cm/ssr-static-staging/',
     // 提取css
     // extends(config, { isDev }) {
     //   if (!isDev) {
     //     config.extractCSS = true
     //   }
     // },
-    extractCSS: true,
+    // extractCSS: true,
     plugins: [
       // ENV.NODE_ENV !== 'development'
       //   ? new CopyPlugin(
