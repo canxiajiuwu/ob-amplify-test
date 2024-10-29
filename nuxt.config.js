@@ -1,15 +1,20 @@
 /* eslint-disable no-useless-escape */
 // 引入环境配置
+import { defineNuxtConfig } from '@nuxt/bridge'
 import env from './env'
 import { routes } from './static/js/sitemap.js'
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const CopyPlugin = require('copy-webpack-plugin')
-// eslint-disable-next-line nuxt/no-cjs-in-config
-const MangleCssClassPluginC = require('./plugins/mangle-css-class-plugin-c/index.js')
+// // eslint-disable-next-line nuxt/no-cjs-in-config
+// const CopyPlugin = require('copy-webpack-plugin')
+// // eslint-disable-next-line nuxt/no-cjs-in-config
+// const MangleCssClassPluginC = require('./plugins/mangle-css-class-plugin-c/index.js')
 
 // env环境变量
 const ENV = env[process.env.NODE_ENV]
-export default {
+
+export default defineNuxtConfig({
+  bridge: {
+    nitro: true
+  },
   vue: {
     config: {
       // 开不开启devtools
@@ -312,24 +317,24 @@ export default {
     // },
     extractCSS: true,
     plugins: [
-      ENV.NODE_ENV !== 'development'
-        ? new CopyPlugin(
-            [
-              {
-                from: 'static',
-                to: ''
-              }
-            ],
-            { debug: 'info' }
-          )
-        : () => {},
-      ENV.NODE_ENV !== 'development'
-        ? new MangleCssClassPluginC({
-            classNameRegExp: 'cl-[a-zA-Z0-9_-]*',
-            mangleCssVariables: true,
-            log: false
-          })
-        : () => {}
+      // ENV.NODE_ENV !== 'development'
+      //   ? new CopyPlugin(
+      //       [
+      //         {
+      //           from: 'static',
+      //           to: ''
+      //         }
+      //       ],
+      //       { debug: 'info' }
+      //     )
+      //   : () => {},
+      // ENV.NODE_ENV !== 'development'
+      //   ? new MangleCssClassPluginC({
+      //       classNameRegExp: 'cl-[a-zA-Z0-9_-]*',
+      //       mangleCssVariables: true,
+      //       log: false
+      //     })
+      //   : () => {}
     ]
   },
 
@@ -343,4 +348,4 @@ export default {
     //     }
     //   }
   }
-}
+})
