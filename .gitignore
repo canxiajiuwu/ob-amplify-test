@@ -88,3 +88,5 @@ current/
 source/
 .deploys
 plugins/mangle-css-class-plugin-c/cache2.json
+
+.output
