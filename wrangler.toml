@@ -2,7 +2,7 @@ name = "ob-test"
 main = "./.output/server/index.mjs"
 workers_dev = true
 compatibility_flags = [ "nodejs_compat" ]
-compatibility_date = "2023-12-01"
+compatibility_date = "2024-09-23"
 # account_id = "<(optional) your Cloudflare account id, retrievable from the Cloudflare dashboard>"
 # route = "<(optional) mainly useful when you want to setup custom domains>"
 
